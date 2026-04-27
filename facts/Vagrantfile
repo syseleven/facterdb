@@ -501,6 +501,20 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     host.vm.provision 'shell', path: 'get_facts.sh'
     host.vm.provision 'shell', inline: '/sbin/shutdown -h now'
   end
+  config.vm.define 'ubuntu-26.04-x86_64', autostart: false do |host|
+    host.vm.box = 'cloud-image/ubuntu-26.04'
+    host.vm.box_architecture = 'amd64'
+    host.vm.provision 'file', source: 'versions.txt', destination: 'versions.txt'
+    host.vm.provision 'shell', path: 'get_facts.sh'
+    host.vm.provision 'shell', inline: '/sbin/shutdown -h now'
+  end
+  config.vm.define 'ubuntu-26.04-arm64', autostart: false do |host|
+    host.vm.box = 'cloud-image/ubuntu-26.04'
+    host.vm.box_architecture = 'arm64'
+    host.vm.provision 'file', source: 'versions.txt', destination: 'versions.txt'
+    host.vm.provision 'shell', path: 'get_facts.sh'
+    host.vm.provision 'shell', inline: '/sbin/shutdown -h now'
+  end
   # ---------------------------------------------------------------------------- #
   #                                  WINDOWS 10                                  #
   # ---------------------------------------------------------------------------- #
