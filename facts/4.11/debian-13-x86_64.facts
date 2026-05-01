@@ -430,16 +430,18 @@
       "description": "Debian GNU/Linux trixie/sid",
       "id": "Debian",
       "release": {
-        "full": "trixie/sid",
-        "major": "trixie/sid"
+        "full": "13.0",
+        "major": "13",
+        "minor": "0"
       }
     },
     "family": "Debian",
     "hardware": "x86_64",
     "name": "Debian",
     "release": {
-      "full": "trixie/sid",
-      "major": "trixie/sid"
+      "full": "13.0",
+      "major": "13",
+      "minor": "0"
     },
     "selinux": {
       "enabled": false
