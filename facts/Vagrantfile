@@ -9,6 +9,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # This plugin is useful to make sure facts don't change for no reason
   config.timezone.value = 'UTC' if Vagrant.has_plugin?('vagrant-timezone')
+  config.vbguest.auto_update = false if Vagrant.has_plugin?('vagrant-vbguest')
 
   config.vm.provider 'virtualbox' do |v|
     v.gui = false
