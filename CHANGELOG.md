@@ -1,5 +1,13 @@
 # Changelog
 
+## [4.4.0](https://rubygems.org/gems/facterdb/versions/4.4.0) (2026-05-01)
+
+[Full Changelog](https://github.com/voxpupuli/facterdb/compare/4.3.0...4.4.0)
+
+**Implemented enhancements:**
+
+- Add OpenFact 5.2, 5.4, 5.6 factsets [\#456](https://github.com/voxpupuli/facterdb/pull/456) ([bastelfreak](https://github.com/bastelfreak))
+
 ## [4.3.0](https://rubygems.org/gems/facterdb/versions/4.3.0) (2026-04-27)
 
 [Full Changelog](https://github.com/voxpupuli/facterdb/compare/4.2.0...4.3.0)
